@@ -1,0 +1,99 @@
+@import './cropper.css';
+@import './tooltip.scss';
+@import './multiselect.scss';
+
+.multiselect-input {
+  border: 0;
+  min-height: 36px;
+}
+
+.multiselect-clear {
+  border: 0;
+  right: 2px;
+  height: 32px;
+  width: 32px;
+}
+
+.multiselect-options {
+  margin-top: 5px;
+  @apply shadow-md rounded-md;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700;
+}
+
+.formulate-form-error {
+  @apply rounded-md bg-red-50 p-4 text-sm font-medium text-red-800;
+}
+
+.editor-slashcommand-item--selected,
+.editor-slashcommand-item:hover {
+  @apply text-blue-100;
+  @apply bg-blue-100;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 250ms;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.filepond--credits {
+  display: none;
+}
+
+.form-no-outline,
+.form-no-outline:focus {
+  @apply shadow-none ring-0 border-0;
+}
+
+.p-standard {
+  @apply px-4 pt-5 pb-4 sm:p-6;
+}
+
+.editor-signal {
+  @apply rounded-md flex border;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  .editor-signal--content {
+    @apply px-3 py-2 flex-1;
+  }
+
+  .editor-signal--box {
+    @apply flex items-center justify-center uppercase text-sm;
+  }
+
+  .editor-signal--label {
+    @apply text-gray-400 uppercase px-2 py-1.5 text-sm;
+    [data-label]::before {
+      content: attr(data-label);
+    }
+  }
+}
+
+// .editor-signal {
+//   @apply rounded-md flex border;
+
+//   .editor-signal--content {
+//     @apply px-3 py-2 flex-1;
+//   }
+
+//   .editor-signal--box {
+//     @apply flex items-center justify-center rounded-r-md px-4 uppercase text-sm py-2;
+//   }
+
+//   &.editor-signal--feature {
+//     @apply border-blue-100;
+
+//     .editor-signal--box {
+//       @apply bg-blue-50 text-blue-600;
+//     }
+//   }
+// }
